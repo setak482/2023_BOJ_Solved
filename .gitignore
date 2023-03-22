@@ -1,0 +1,10 @@
+*.exe
+*.json
+*.asm
+*.s
+*.S
+.vscode/
+.vs/
+*.txt
+*.vbs
+test*.*
