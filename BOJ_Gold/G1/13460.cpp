@@ -43,7 +43,7 @@ void print(int redx, int redy, int bluex, int bluey){
         cout << '\n';
     }
 }
-bool bfs(int red_x, int red_y, int blue_x, int blue_y){
+int bfs(int red_x, int red_y, int blue_x, int blue_y){
     // 빨강, 파랑 순
     queue<tuple<Marble, Marble, int>> q;
     q.push({Marble(red_x, red_y), Marble(blue_x, blue_y), 0});
@@ -108,7 +108,7 @@ bool bfs(int red_x, int red_y, int blue_x, int blue_y){
             }
         }
     }
-    return 0;
+    return -1;
 }
 void input(){
     cin >> yBorder >> xBorder;
